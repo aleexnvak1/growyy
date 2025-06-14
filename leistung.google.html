@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Ads – Novakovskij Marketingagentur</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .btn-brand {
+      background-color: #18CB96;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s ease;
+      display: inline-block;
+    }
+    .btn-brand:hover {
+      background-color: #16b187;
+    }
+    .announcement {
+      background-color: #16b187;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <div class="announcement">
+    📣 Werde mit Google Ads bei jeder relevanten Suche sichtbar – wir holen das Maximum aus deinem Budget!
+  </div>
+  <header class="bg-gray-900 text-white p-6 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="w-36 h-auto">
+      <a href="index.html">
+        <img src="Fotos/LOGO.svg" alt="Logo" class="w-full h-auto">
+      </a>
+    </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 items-center relative">
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:underline" onclick="document.getElementById('desktopDropdown').classList.toggle('hidden')">
+          Leistungen
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div id="desktopDropdown" class="absolute hidden group-hover:block bg-white text-gray-900 rounded shadow-lg mt-2 w-64 z-50">
+          <a href="leistung.google.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="hover:underline">Scaling Pakete</a>
+      <a href="ueberuns.html" class="hover:underline">Über uns</a>
+      <a href="referenzen.html" class="hover:underline">Referenzen</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt & FAQ</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Navigation Slider -->
+  <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white text-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden shadow-lg">
+    <div class="p-4">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="mb-4 text-right w-full">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      <div class="relative">
+        <button onclick="document.getElementById('mobileDropdown').classList.toggle('hidden')" class="flex items-center justify-between w-full px-4 py-2 bg-[#18CB96]/10 rounded">
+          Leistungen
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="mobileDropdown" class="hidden flex flex-col bg-gray-50 mt-1 rounded shadow-inner">
+          <a href="leistung.google.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Scale-Pakete</a>
+      <a href="ueberuns.html" class="block px-4 py-2 hover:bg-[#18CB96]/10 mt-2">Über uns</a>
+      <a href="referenzen.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Referenzen</a>
+      <a href="kontakt.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Kontakt & FAQ</a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Header -->
+  <!-- Hier kommt die identische Navbar wie bei Index.html rein -->
+  <!-- Füge sie aus der finalisierten Paket.html oder Index.html ein -->
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Google Ads – Mehr Sichtbarkeit, mehr Kunden</h1>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto">Erreiche deine Zielgruppe genau dann, wenn sie nach deinen Leistungen sucht – mit gezielten Such-, Display- und YouTube-Kampagnen.</p>
+    </div>
+  </section>
+
+  <!-- Was wir machen -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Was wir für dich übernehmen</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Keyword- & Zielgruppenanalyse</h3>
+          <p>Wir identifizieren die Begriffe, nach denen deine Kunden wirklich suchen – datenbasiert & präzise.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Anzeigentexte & Creatives</h3>
+          <p>Verkaufsstarke Texte & ansprechende Grafiken sorgen für maximale Relevanz und Klickrate.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Kampagnen-Setup & Struktur</h3>
+          <p>Wir bauen saubere Kampagnenstrukturen mit Fokus auf Qualität, Conversion und Skalierbarkeit.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Tracking & Conversion-Optimierung</h3>
+          <p>Wir richten alle relevanten Messpunkte ein – für fundierte Entscheidungen & ROI-Steigerung.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">A/B-Tests & laufende Optimierung</h3>
+          <p>Wir testen fortlaufend Anzeigen, Zielseiten & Gebote – und verbessern die Performance kontinuierlich.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Reportings & Beratung</h3>
+          <p>Transparente Reports & regelmäßige Strategietermine für maximale Klarheit & Kontrolle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garantien & Vorteile -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Google Ads Garantien</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Schnelle Sichtbarkeit durch professionelle Kampagnenstruktur</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Transparente Ergebnisse mit verständlichen Reports</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Effiziente Budgetnutzung – kein Streuverlust</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Laufende Optimierung für maximale Conversions</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Betreuung durch Google-zertifizierte Experten</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Strategie, Umsetzung und Support aus einer Hand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <h3 class="text-3xl font-bold mb-4">Starte jetzt mit Google Ads durch</h3>
+    <p class="mb-6">Mehr Sichtbarkeit, mehr Anfragen – mit uns als Partner an deiner Seite.</p>
+    <a href="kontakt.html" class="btn-brand">Kostenlose Beratung buchen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">© 2025 Novakovskij Marketingagentur</p>
+      <p class="text-sm">info@novakovskij-marketing.de | +49 123 456 789</p>
+    </div>
+  </footer>
+</body>
+</html>

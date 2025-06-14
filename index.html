@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketingagentur Novakovskij</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+ 
+  .btn-brand {
+    background-color: #18CB96;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+  }
+  .btn-brand:hover {
+    background-color: #16b187;
+  }
+  .announcement {
+    background-color: #16b187;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+  }
+</style>
+
+</head>
+<body class="bg-white text-gray-800">
+  <div class="announcement">
+  📣 Schon gewusst? Gen Z nutzt TikTok zunehmend als Suchmaschine. Wir sorgen dafür, dass sie nur bei dir kaufen!
+</div>
+
+  <!-- Header -->
+<header class="bg-gray-900 text-white p-6 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="w-36 h-auto">
+<a href="index.html">
+     <img src="Fotos/LOGO.svg" alt="Logo" class="w-full h-auto">
+    </a>    </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 items-center relative">
+      <div class="relatifive group">
+        <button class="flex items-center gap-1 hover:underline" onclick="document.getElementById('desktopDropdown').classList.toggle('hidden')">
+          Leistungen
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div id="desktopDropdown" class="absolute hidden group-hover:block bg-white text-gray-900 rounded shadow-lg mt-2 w-64 z-50">
+          <a href="leistung.google.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="hover:underline">Scaling Pakete</a>
+      <a href="ueberuns.html" class="hover:underline">Über uns</a>
+      <a href="referenzen.html" class="hover:underline">Referenzen</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt & FAQ</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Navigation Slider -->
+  <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white text-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden shadow-lg">
+    <div class="p-4">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="mb-4 text-right w-full">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      <div class="relative">
+        <button onclick="document.getElementById('mobileDropdown').classList.toggle('hidden')" class="flex items-center justify-between w-full px-4 py-2 bg-[#18CB96]/10 rounded">
+          Leistungen
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="mobileDropdown" class="hidden flex flex-col bg-gray-50 mt-1 rounded shadow-inner">
+          <a href="" class="px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.google.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Scale-Pakete</a>
+      <a href="ueberuns.html" class="block px-4 py-2 hover:bg-[#18CB96]/10 mt-2">Über uns</a>
+      <a href="referenzen.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Referenzen</a>
+      <a href="kontakt.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Kontakt & FAQ</a>
+      
+    </div>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+<section class="relative">
+  <img src="Fotos/Header.svg" alt="Marketing Hero" class="w-full h-auto">
+</section>
+
+  <!-- Was passiert mit uns -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Was passiert, wenn du mit uns arbeitest?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fas fa-bullseye text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Glasklare Positionierung</h4>
+          <p>Dein Angebot wird auf den Punkt gebracht – klar, relevant und zielgruppenscharf.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fas fa-rocket text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Schneller Markenaufbau</h4>
+          <p>Du wirst sichtbar – mit Content, Anzeigen und Social Proof.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i class="fas fa-handshake text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Mehr Anfragen & Bewerbungen</h4>
+          <p>Mit durchdachten Funnels und starken Creatives generieren wir messbare Ergebnisse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wie wir dir helfen -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Wie wir dir helfen?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+      <!-- Schritt 1 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition">
+        <img src="Fotos/Erstgespräch.svg" alt="Erstgespräch" class="mx-auto mb-4 rounded-lg h-32 w-32 object-cover" loading="lazy">
+        <h4 class="text-xl font-semibold mb-2">1. Erstgespräch</h4>
+        <p class="text-gray-600">Wir analysieren gemeinsam deine Situation, Ziele und Potenziale – unverbindlich & individuell.</p>
+      </div>
+
+      <!-- Schritt 2 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition">
+        <img src="Fotos/Strategie.svg" alt="Strategie" class="mx-auto mb-4 rounded-lg h-32 w-32 object-cover" loading="lazy">
+        <h4 class="text-xl font-semibold mb-2">2. Strategie</h4>
+        <p class="text-gray-600">Basierend auf Daten und Erfahrung entwickeln wir eine passgenaue Marketing-Strategie.</p>
+      </div>
+      <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/alexnovakovskij', text: 'Kostenloses Erstgespräch', color: '#18cb96', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+
+      <!-- Schritt 3 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition">
+        <img src="Fotos/Umsetzung.svg" alt="Umsetzung" class="mx-auto mb-4 rounded-lg h-32 w-32 object-cover" loading="lazy">
+        <h4 class="text-xl font-semibold mb-2">3. Umsetzung</h4>
+        <p class="text-gray-600">Wir setzen alles für dich um – von Creatives über Ads bis SEO. Schnell & effizient.</p>
+      </div>
+
+      <!-- Schritt 4 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition">
+        <img src="Fotos/Analyse.svg" alt="Analyse" class="mx-auto mb-4 rounded-lg h-32 w-32 object-cover" loading="lazy">
+        <h4 class="text-xl font-semibold mb-2">4. Analyse & Optimierung</h4>
+        <p class="text-gray-600">Mit klaren KPIs und regelmäßigen Reportings optimieren wir laufend für den besten ROI.</p>
+      </div>
+
+    </div>
+  </div>
+<div class="text-center mt-12">
+  <p class="text-xl font-semibold mb-4">Bereit, den nächsten Schritt zu gehen?</p>
+  <a href="#kontakt" class="btn-brand">Kostenloses Erstgespräch buchen</a>
+</div>
+
+</section>
+
+
+<!-- Bedeutung von Social Media Content & Ads -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold mb-6">Warum Social Media Content & Ads heute entscheidend sind</h3>
+    <p class="mb-12 text-gray-700 max-w-3xl mx-auto">
+      In einer Welt, in der Aufmerksamkeit die neue Währung ist, entscheiden gezielter Content und intelligente Werbeanzeigen darüber, ob dein Unternehmen wahrgenommen wird – oder nicht. Social Media ist längst kein Trend mehr, sondern ein essenzieller Kanal für Markenbildung, Kundenbindung und Reichweite.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="Fotos/Content.svg" alt="Social Media Content" class="rounded mb-4 w-full h-48 object-cover">
+        <h4 class="text-xl font-semibold mb-2">Content, der verbindet</h4>
+        <p class="text-gray-600">Emotionaler und relevanter Content schafft Vertrauen und bleibt im Kopf.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="Fotos/Werbung.svg" alt="Social Ads" class="rounded mb-4 w-full h-48 object-cover">
+        <h4 class="text-xl font-semibold mb-2">Werbung mit Wirkung</h4>
+        <p class="text-gray-600">Gezielte Ads bringen deine Botschaft zur richtigen Zeit an die richtige Zielgruppe.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="Fotos/Erfolg.svg" alt="Performance Tracking" class="rounded mb-4 w-full h-48 object-cover">
+        <h4 class="text-xl font-semibold mb-2">Messbarer Erfolg</h4>
+        <p class="text-gray-600">Dank Tracking & Analyse weißt du genau, was wirkt – und was nicht.</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-12">
+  <p class="text-xl font-semibold mb-4">Nutze das volle Potenzial deiner Social-Media-Kanäle!</p>
+  <a href="#kontakt" class="btn-brand">Jetzt Strategiegespräch vereinbaren</a>
+</div>
+
+</section>
+
+</section>
+
+  <!-- Warum wir Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12">Warum mit uns arbeiten?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white shadow rounded-lg">
+          <i class="fas fa-bolt text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Schnelle Umsetzung</h4>
+          <p>Von der Strategie bis zur Live-Schaltung – wir liefern in Rekordzeit.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <i class="fas fa-chart-line text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Messbare Ergebnisse</h4>
+          <p>Transparente Reports und KPIs, die wirklich zählen.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Zielgruppenfokus</h4>
+          <p>Wir sprechen genau die Menschen an, die du erreichen willst.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+  <p class="text-xl font-semibold mb-4">Werde Teil unserer Erfolgsgeschichten.</p>
+  <a href="#kontakt" class="btn-brand">Jetzt unverbindlich kontaktieren</a>
+</div>
+
+  </section>
+
+  <!-- Leistungen Übersicht -->
+ <section id="leistungen" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h3>
+
+    <!-- Mobile: Accordion -->
+    <div class="space-y-4 md:hidden">
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-search-dollar text-[#18CB96] mr-2"></i> Google Ads</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="acc1" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+          Wir schalten gezielte Kampagnen über Google Ads, um deine Sichtbarkeit bei Suchanfragen zu steigern. Durch kontinuierliches Monitoring und A/B-Testing holen wir das Maximum aus deinem Werbebudget heraus.
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc2')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fab fa-facebook text-[#18CB96] mr-2"></i> Meta Ads</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc2" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Auf Facebook & Instagram erreichen wir deine Zielgruppe mit performanten Anzeigen, emotionalen Creatives und datengetriebenem Targeting. Wir erstellen, testen und optimieren – alles aus einer Hand.
+</div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc3')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fab fa-tiktok text-[#18CB96] mr-2"></i> TikTok Ads</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc3" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Für junge Zielgruppen entwickeln wir virale TikTok-Kampagnen mit hohem Engagement. Wir kombinieren Trends, Musik und starke Visuals für maximale Reichweite und Wirkung.
+</div>      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc4')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-search text-[#18CB96] mr-2"></i> SEO</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc4" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Unsere SEO-Strategie umfasst technische Optimierung, Keyword-Analyse und hochwertigen Content. So steigen deine Rankings langfristig – und du wirst organisch gefunden, wenn es zählt.
+</div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc5')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-hashtag text-[#18CB96] mr-2"></i> Social Media Marketing</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc5" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Wir entwickeln eine Social-Media-Strategie, die zu deiner Marke passt: Content-Pläne, Interaktion mit der Community, kreative Reels & Posts – für mehr Reichweite und Vertrauen.
+</div>      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc6')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-pen-nib text-[#18CB96] mr-2"></i> Content-Erstellung</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc6" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Ob Texte, Fotos oder Videos – wir erstellen hochwertigen Content, der informiert, überzeugt und verkauft. Vom Social-Media-Post bis zur Anzeigenkampagne alles auf deine Ziele abgestimmt.
+</div>      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc7')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-user-plus text-[#18CB96] mr-2"></i> Social Recruiting</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc7" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Wir bauen digitale Bewerber-Funnels über Facebook, Instagram oder TikTok. Mit zielgerichteten Ads, Landingpages und Automatisierung finden wir die richtigen Fachkräfte für dich.
+</div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden">
+        <button onclick="toggleAccordion('acc8')" class="w-full flex justify-between items-center px-4 py-3 bg-white text-left font-semibold">
+          <span><i class="fas fa-palette text-[#18CB96] mr-2"></i> Grafikdesign</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+<div id="acc8" class="hidden px-4 pb-4 text-gray-600 bg-gray-50">
+  Von Logo über Anzeigen bis Print: Unser Design-Team sorgt für einen modernen, einheitlichen Look – damit dein Auftritt professionell und einprägsam bleibt.
+</div>      </div>
+    </div>
+
+    <!-- Desktop/Tablet: Grid Ansicht -->
+   <!-- Desktop/Tablet: Grid Ansicht -->
+<div class="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-search-dollar text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Google Ads</h4>
+    <p class="text-gray-600">Wir schalten gezielte Kampagnen über Google Ads, um deine Sichtbarkeit bei Suchanfragen zu steigern. Durch kontinuierliches Monitoring und A/B-Testing holen wir das Maximum aus deinem Werbebudget heraus.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fab fa-facebook text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Meta Ads</h4>
+    <p class="text-gray-600">Auf Facebook & Instagram erreichen wir deine Zielgruppe mit performanten Anzeigen, emotionalen Creatives und datengetriebenem Targeting. Wir erstellen, testen und optimieren – alles aus einer Hand.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fab fa-tiktok text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">TikTok Ads</h4>
+    <p class="text-gray-600">Für junge Zielgruppen entwickeln wir virale TikTok-Kampagnen mit hohem Engagement. Wir kombinieren Trends, Musik und starke Visuals für maximale Reichweite und Wirkung.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-search text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">SEO</h4>
+    <p class="text-gray-600">Unsere SEO-Strategie umfasst technische Optimierung, Keyword-Analyse und hochwertigen Content. So steigen deine Rankings langfristig – und du wirst organisch gefunden, wenn es zählt.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-hashtag text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Social Media Marketing</h4>
+    <p class="text-gray-600">Wir entwickeln eine Social-Media-Strategie, die zu deiner Marke passt: Content-Pläne, Interaktion mit der Community, kreative Reels & Posts – für mehr Reichweite und Vertrauen.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-pen-nib text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Content-Erstellung</h4>
+    <p class="text-gray-600">Ob Texte, Fotos oder Videos – wir erstellen hochwertigen Content, der informiert, überzeugt und verkauft. Vom Social-Media-Post bis zur Anzeigenkampagne alles auf deine Ziele abgestimmt.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-user-plus text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Social Recruiting</h4>
+    <p class="text-gray-600">Wir bauen digitale Bewerber-Funnels über Facebook, Instagram oder TikTok. Mit zielgerichteten Ads, Landingpages und Automatisierung finden wir die richtigen Fachkräfte für dich.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+    <i class="fas fa-palette text-[#18CB96] text-4xl mb-4"></i>
+    <h4 class="text-xl font-semibold mb-2">Grafikdesign</h4>
+    <p class="text-gray-600">Von Logo über Anzeigen bis Print: Unser Design-Team sorgt für einen modernen, einheitlichen Look – damit dein Auftritt professionell und einprägsam bleibt.</p>
+  </div>
+</div>
+
+  </div>
+  <div class="text-center mt-12">
+  <p class="text-xl font-semibold mb-4">Lass uns gemeinsam deine Marketingziele erreichen.</p>
+  <a href="#kontakt" class="btn-brand">Leistungen besprechen</a>
+</div>
+
+</section>
+
+
+  <!-- Testimonial Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Was unsere Kunden sagen</h3>
+      <div class="max-w-3xl mx-auto bg-gray-100 p-8 rounded shadow">
+        <p class="italic text-lg">„Dank Growyy Marketing haben wir nicht nur unsere Sichtbarkeit massiv gesteigert, sondern auch eine neue Zielgruppe gewonnen. Top Zusammenarbeit!“</p>
+        <p class="mt-4 font-semibold">– Herr Akdeniz, Taverna Bodenfeld</p>
+<img src="Fotos/Taverna.svg" alt="Kundenlogo" class="mx-auto mt-4 h-40">
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Häufig gestellte Fragen</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+
+      <!-- Frage 1 -->
+      <div>
+        <button onclick="toggleFaq(1)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie läuft die Zusammenarbeit mit euch ab?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-1"></i>
+        </button>
+        <div id="faq-1" class="hidden mt-2 text-gray-600">
+          Wir starten mit einem kostenlosen Erstgespräch, entwickeln dann eine maßgeschneiderte Strategie und setzen alles um – von der Idee bis zur Performance-Optimierung.
+        </div>
+      </div>
+
+      <!-- Frage 2 -->
+      <div>
+        <button onclick="toggleFaq(2)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Für wen ist euer Angebot geeignet?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-2"></i>
+        </button>
+        <div id="faq-2" class="hidden mt-2 text-gray-600">
+          Unser Angebot richtet sich an Unternehmen, die gezielt wachsen wollen – egal ob Dienstleister, Online-Shop oder lokales Business.
+        </div>
+      </div>
+
+      <!-- Frage 3 -->
+      <div>
+        <button onclick="toggleFaq(3)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie schnell sehe ich Ergebnisse?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-3"></i>
+        </button>
+        <div id="faq-3" class="hidden mt-2 text-gray-600">
+          Erste Ergebnisse siehst du meist schon nach wenigen Tagen – echte Skalierung startet in der Regel innerhalb der ersten Wochen.
+        </div>
+      </div>
+
+      <!-- Frage 4 -->
+      <div>
+        <button onclick="toggleFaq(4)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Was kostet eure Leistung?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-4"></i>
+        </button>
+        <div id="faq-4" class="hidden mt-2 text-gray-600">
+          Unsere Preise sind individuell – je nach Umfang, Kanälen und Zielen. Im kostenlosen Erstgespräch bekommst du eine klare Einschätzung.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call to Action -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <h3 class="text-3xl font-bold mb-4">Bereit, mit uns durchzustarten?</h3>
+    <p class="mb-6">Lass uns gemeinsam dein Unternehmen sichtbar machen – online und im Recruiting.</p>
+    <a href="#kontakt" class="btn-brand">Beratung anfragen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontakt" class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto text-center">
+    <p class="mb-2">© 2025 Growyy Marketing</p>
+    <p class="text-sm mb-4">info@growyy-marketing.de | +49 176 7000 3903</p>
+    <div class="space-x-4 text-sm">
+      <a href="impressum.html" class="hover:underline">Impressum</a>
+      <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+      <a href="agb.html" class="hover:underline">AGB</a>
+      <a href="cookies.html" class="hover:underline">Cookie-Richtlinie</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function disableZoom(disable) {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) return;
+    if (disable) {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+  }
+
+  document.querySelectorAll('[onclick*="mobileMenu"]').forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        disableZoom(isOpen);
+      }, 10);
+    });
+  });
+</script>
+<script>
+function toggleAccordion(id) {
+  // Alle Akkordeon-Elemente schließen
+  document.querySelectorAll('[id^="acc"]').forEach(el => {
+    if (el.id !== id) el.classList.add('hidden');
+  });
+
+  // Aktuelles Akkordeon öffnen/schließen
+  const element = document.getElementById(id);
+  element.classList.toggle('hidden');
+}
+
+</script>
+<script>
+  function toggleFaq(id) {
+    const content = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-faq-${id}`);
+    const isOpen = !content.classList.contains('hidden');
+    
+    // Alle FAQs schließen
+    document.querySelectorAll('[id^="faq-"]').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('[id^="icon-faq-"]').forEach(el => el.classList.remove('rotate-180'));
+
+    // Nur öffnen, wenn vorher geschlossen war
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketingagentur Novakovskij</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+ 
+  .btn-brand {
+    background-color: #18CB96;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+    display: inline-block;
+  }
+  .btn-brand:hover {
+    background-color: #16b187;
+  }
+  .announcement {
+    background-color: #16b187;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+  }
+</style>
+
+</head>
+<body class="bg-white text-gray-800">
+  <div class="announcement">
+  📣 Schon gewusst? Gen Z nutzt TikTok zunehmend als Suchmaschine. Wir sorgen dafür, dass sie nur bei dir kaufen!
+</div>
+
+  <!-- Header -->
+<header class="bg-gray-900 text-white p-6 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="w-36 h-auto">
+<a href="index.html">
+     <img src="Fotos/LOGO.svg" alt="Logo" class="w-full h-auto">
+    </a>    </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 items-center relative">
+      <div class="relatifive group">
+        <button class="flex items-center gap-1 hover:underline" onclick="document.getElementById('desktopDropdown').classList.toggle('hidden')">
+          Leistungen
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div id="desktopDropdown" class="absolute hidden group-hover:block bg-white text-gray-900 rounded shadow-lg mt-2 w-64 z-50">
+          <a href="leistung.google.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="hover:underline">Scaling Pakete</a>
+      <a href="ueberuns.html" class="hover:underline">Über uns</a>
+      <a href="referenzen.html" class="hover:underline">Referenzen</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt & FAQ</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Navigation Slider -->
+  <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white text-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden shadow-lg">
+    <div class="p-4">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="mb-4 text-right w-full">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      <div class="relative">
+        <button onclick="document.getElementById('mobileDropdown').classList.toggle('hidden')" class="flex items-center justify-between w-full px-4 py-2 bg-[#18CB96]/10 rounded">
+          Leistungen
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="mobileDropdown" class="hidden flex flex-col bg-gray-50 mt-1 rounded shadow-inner">
+          <a href="" class="px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.google.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Scale-Pakete</a>
+      <a href="ueberuns.html" class="block px-4 py-2 hover:bg-[#18CB96]/10 mt-2">Über uns</a>
+      <a href="referenzen.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Referenzen</a>
+      <a href="kontakt.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Kontakt & FAQ</a>
+      
+    </div>
+  </div>
+</header>
+<section class="py-20 bg-gray-100" id="kontaktformular">
+  <div class="container mx-auto px-4 max-w-2xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Kontaktiere uns</h2>
+    <form action="https://formspree.io/f/xrbkevyy" method="POST" class="bg-white shadow-md rounded-xl p-8 space-y-6">
+      
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail-Adresse</label>
+        <input type="email" name="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#18CB96]">
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Nachricht</label>
+        <textarea name="message" id="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#18CB96]"></textarea>
+      </div>
+
+      <!-- Optional: weitere Felder -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Dein Name (optional)</label>
+        <input type="text" name="name" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#18CB96]">
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn-brand">Nachricht senden</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-20">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Häufig gestellte Fragen</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+
+      <!-- Frage 1 -->
+      <div>
+        <button onclick="toggleFaq(1)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie läuft die Zusammenarbeit mit euch ab?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-1"></i>
+        </button>
+        <div id="faq-1" class="hidden mt-2 text-gray-600">
+          Wir starten mit einem kostenlosen Erstgespräch, entwickeln dann eine maßgeschneiderte Strategie und setzen alles um – von der Idee bis zur Performance-Optimierung.
+        </div>
+      </div>
+
+      <!-- Frage 2 -->
+      <div>
+        <button onclick="toggleFaq(2)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Für wen ist euer Angebot geeignet?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-2"></i>
+        </button>
+        <div id="faq-2" class="hidden mt-2 text-gray-600">
+          Unser Angebot richtet sich an Unternehmen, die gezielt wachsen wollen – egal ob Dienstleister, Online-Shop oder lokales Business.
+        </div>
+      </div>
+
+      <!-- Frage 3 -->
+      <div>
+        <button onclick="toggleFaq(3)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie schnell sehe ich Ergebnisse?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-3"></i>
+        </button>
+        <div id="faq-3" class="hidden mt-2 text-gray-600">
+          Erste Ergebnisse siehst du meist schon nach wenigen Tagen – echte Skalierung startet in der Regel innerhalb der ersten Wochen.
+        </div>
+      </div>
+
+      <!-- Frage 4 -->
+      <div>
+        <button onclick="toggleFaq(4)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Was kostet eure Leistung?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-4"></i>
+        </button>
+        <div id="faq-4" class="hidden mt-2 text-gray-600">
+          Unsere Preise sind individuell – je nach Umfang, Kanälen und Zielen. Im kostenlosen Erstgespräch bekommst du eine klare Einschätzung.
+        </div>
+      </div>
+
+      <!-- Frage 5 -->
+      <div>
+        <button onclick="toggleFaq(5)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Welche Leistungen bietet ihr genau an?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-5"></i>
+        </button>
+        <div id="faq-5" class="hidden mt-2 text-gray-600">
+          Wir bieten Google Ads, Meta Ads, TikTok Ads, SEO, Content-Erstellung, Grafikdesign und Social Media Recruiting – von Strategie bis Umsetzung alles aus einer Hand.
+        </div>
+      </div>
+
+      <!-- Frage 6 -->
+      <div>
+        <button onclick="toggleFaq(6)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie lange läuft die Zusammenarbeit?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-6"></i>
+        </button>
+        <div id="faq-6" class="hidden mt-2 text-gray-600">
+          Wir bieten flexible Laufzeiten an – je nach Paket oder Absprache. In der Regel arbeiten wir in 3- bis 6-monatigen Intervallen für messbare Resultate.
+        </div>
+      </div>
+
+      <!-- Frage 7 -->
+      <div>
+        <button onclick="toggleFaq(7)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Gibt es eine Vertragsbindung?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-7"></i>
+        </button>
+        <div id="faq-7" class="hidden mt-2 text-gray-600">
+          Unsere Pakete haben klare Laufzeiten, aber auch flexible Testphasen oder Exit-Optionen – wir setzen auf Vertrauen statt Zwang.
+        </div>
+      </div>
+
+      <!-- Frage 8 -->
+      <div>
+        <button onclick="toggleFaq(8)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Wie messt ihr den Erfolg eurer Maßnahmen?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-8"></i>
+        </button>
+        <div id="faq-8" class="hidden mt-2 text-gray-600">
+          Wir arbeiten mit klaren KPIs wie Leads, Conversions, CPC und ROAS. Du erhältst regelmäßige Reportings und strategische Empfehlungen.
+        </div>
+      </div>
+
+      <!-- Frage 9 -->
+      <div>
+        <button onclick="toggleFaq(9)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Welche Branchen betreut ihr?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-9"></i>
+        </button>
+        <div id="faq-9" class="hidden mt-2 text-gray-600">
+          Wir haben Erfahrung mit lokalen Dienstleistern, Restaurants, Coaches, Online-Shops, Gesundheitsbetrieben und Handwerksunternehmen – Branchenkenntnis inklusive.
+        </div>
+      </div>
+
+      <!-- Frage 10 -->
+      <div>
+        <button onclick="toggleFaq(10)" class="w-full text-left text-lg font-semibold flex justify-between items-center">
+          <span>Muss ich zusätzliches Werbebudget einplanen?</span>
+          <i class="fas fa-chevron-down transition-transform duration-200" id="icon-faq-10"></i>
+        </button>
+        <div id="faq-10" class="hidden mt-2 text-gray-600">
+          Ja, für Kampagnen auf Google, Meta oder TikTok empfehlen wir ein separates Ads-Budget. Wir helfen dir, die optimale Höhe zu bestimmen – abgestimmt auf Ziel und Markt.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call to Action -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <h3 class="text-3xl font-bold mb-4">Bereit, mit uns durchzustarten?</h3>
+    <p class="mb-6">Lass uns gemeinsam dein Unternehmen sichtbar machen – online und im Recruiting.</p>
+    <a href="#kontakt" class="btn-brand">Beratung anfragen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontakt" class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto text-center">
+    <p class="mb-2">© 2025 Growyy Marketing</p>
+    <p class="text-sm mb-4">info@growyy-marketing.de | +49 176 7000 3903</p>
+    <div class="space-x-4 text-sm">
+      <a href="impressum.html" class="hover:underline">Impressum</a>
+      <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+      <a href="agb.html" class="hover:underline">AGB</a>
+      <a href="cookies.html" class="hover:underline">Cookie-Richtlinie</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function disableZoom(disable) {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) return;
+    if (disable) {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+  }
+
+  document.querySelectorAll('[onclick*="mobileMenu"]').forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        disableZoom(isOpen);
+      }, 10);
+    });
+  });
+</script>
+<script>
+function toggleAccordion(id) {
+  // Alle Akkordeon-Elemente schließen
+  document.querySelectorAll('[id^="acc"]').forEach(el => {
+    if (el.id !== id) el.classList.add('hidden');
+  });
+
+  // Aktuelles Akkordeon öffnen/schließen
+  const element = document.getElementById(id);
+  element.classList.toggle('hidden');
+}
+
+</script>
+<script>
+  function toggleFaq(id) {
+    const content = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-faq-${id}`);
+    const isOpen = !content.classList.contains('hidden');
+    
+    // Alle FAQs schließen
+    document.querySelectorAll('[id^="faq-"]').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('[id^="icon-faq-"]').forEach(el => el.classList.remove('rotate-180'));
+
+    // Nur öffnen, wenn vorher geschlossen war
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script>
+
+
+</body>
+</html>

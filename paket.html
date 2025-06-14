@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsere Pakete</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="tarifstyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .plan {
+      transition: transform 0.3s ease-in-out;
+    }
+    .plan:hover {
+      transform: scale(1.05);
+    }
+    .btn-brand {
+      background-color: #18CB96;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: background-color 0.2s ease;
+    }w
+    .btn-brand:hover {
+      background-color: #16b187;
+    }
+  </style>
+</head>
+
+  <div class="announcement">
+  📣 Schon gewusst? Gen Z nutzt TikTok zunehmend als Suchmaschine. Wir sorgen dafür, dass sie nur bei dir kaufen!
+</div>
+
+  <!-- Header -->
+<!-- Header -->
+<header class="bg-gray-900 text-white p-6 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="w-36 h-auto">
+      <a href="index.html">
+        <img src="Fotos/LOGO.svg" alt="Logo" class="w-full h-auto">
+      </a>
+    </div>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 items-center relative">
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:underline" onclick="document.getElementById('desktopDropdown').classList.toggle('hidden')">
+          Leistungen
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+        <div id="desktopDropdown" class="absolute hidden group-hover:block bg-white text-gray-900 rounded shadow-lg mt-2 w-64 z-50">
+          <a href="leistung.google.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="hover:underline">Scaling Pakete</a>
+      <a href="ueberuns.html" class="hover:underline">Über uns</a>
+      <a href="referenzen.html" class="hover:underline">Referenzen</a>
+      <a href="kontakt.html" class="hover:underline">Kontakt & FAQ</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Navigation Slider -->
+  <div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-white text-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden shadow-lg">
+    <div class="p-4">
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="mb-4 text-right w-full">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      <div class="relative">
+        <button onclick="document.getElementById('mobileDropdown').classList.toggle('hidden')" class="flex items-center justify-between w-full px-4 py-2 bg-[#18CB96]/10 rounded">
+          Leistungen
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="mobileDropdown" class="hidden flex flex-col bg-gray-50 mt-1 rounded shadow-inner">
+          <a href="leistung.google.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Google Ads</a>
+          <a href="leistung.meta.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Meta Ads</a>
+          <a href="leistung.tiktok.html" class="px-4 py-2 hover:bg-[#18CB96]/10">TikTok Ads</a>
+          <a href="leistung.seo.html" class="px-4 py-2 hover:bg-[#18CB96]/10">SEO</a>
+          <a href="leistung.smm.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Media Marketing</a>
+          <a href="leistung.content.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Content-Erstellung</a>
+          <a href="leistung.recruiting.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Social Recruiting</a>
+          <a href="leistung.grafikdesign.html" class="px-4 py-2 hover:bg-[#18CB96]/10">Grafikdesign</a>
+        </div>
+      </div>
+      <a href="paket.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Scale-Pakete</a>
+      <a href="ueberuns.html" class="block px-4 py-2 hover:bg-[#18CB96]/10 mt-2">Über uns</a>
+      <a href="referenzen.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Referenzen</a>
+      <a href="kontakt.html" class="block px-4 py-2 hover:bg-[#18CB96]/10">Kontakt & FAQ</a>
+    </div>
+  </div>
+</header>
+
+<body class="bg-gray-100 text-gray-800">
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Unsere Skalierungs-Pakete</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="plan bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-2xl font-semibold mb-2">Basic</h3>
+          <p class="text-4xl font-bold text-[#18CB96] mb-4">499€<span class="text-lg font-normal">/Monat</span></p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✓ 1 Werbekampagne (Google oder Meta)</li>
+            <li>✓ Basis-Setup & Tracking</li>
+            <li>✓ Monatliches Reporting</li>
+          </ul>
+          <a href="#kontakt" class="btn-brand inline-block">Jetzt starten</a>
+        </div>
+        <div class="plan bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-2xl font-semibold mb-2">Prime</h3>
+          <p class="text-4xl font-bold text-[#18CB96] mb-4">699€<span class="text-lg font-normal">/Monat</span></p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✓ 3 Werbekampagnen (z.B. Google, Meta & TikTok)</li>
+            <li>✓ Erweiterte Zielgruppenanalyse</li>
+            <li>✓ Conversion-Optimierung</li>
+            <li>✓ Wöchentliche Performance-Insights</li>
+          </ul>
+          <a href="#kontakt" class="btn-brand inline-block">Jetzt starten</a>
+        </div>
+        <div class="plan bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-2xl font-semibold mb-2">Premium</h3>
+          <p class="text-4xl font-bold text-[#18CB96] mb-4">899€<span class="text-lg font-normal">/Monat</span></p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✓ Alle Ads-Plattformen inkl. TikTok, Meta & Google</li>
+            <li>✓ Funnel-Setup & A/B-Tests</li>
+            <li>✓ Creative-Erstellung inkl. Video</li>
+            <li>✓ Persönlicher Ansprechpartner</li>
+          </ul>
+          <a href="#kontakt" class="btn-brand inline-block">Jetzt starten</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vorteile und Garantien -->
+  <section class="py-20 bg-white px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Unsere Vorteile & Garantien</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Individuelle Marketingstrategien für jede Branche</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Sichtbare Ergebnisse innerhalb weniger Wochen</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Full-Service: Strategie, Umsetzung & Betreuung</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Performance-basierte Optimierung</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Keine versteckten Kosten – transparente Preisstruktur</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Persönlicher Ansprechpartner für alle Anliegen</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Regelmäßige Reportings und Status-Calls</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Conversion-Optimierung mit datenbasierten Tests</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Hochwertige Creatives durch erfahrene Designer</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Social Recruiting inklusive automatisierter Funnels</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Google Ads & Meta Ads vom zertifizierten Team</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Mobile-First: Optimierte Darstellung auf allen Endgeräten</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Hohe Verfügbarkeit & schnelle Umsetzung</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>100 % DSGVO-konforme Umsetzung</p>
+        </div>
+        <div class="flex items-start">
+          <span class="text-[#18CB96] text-xl mr-3">✔</span>
+          <p>Zufriedenheitsgarantie: Testphase mit Exit-Option</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <h3 class="text-3xl font-bold mb-4">Bereit, mit uns durchzustarten?</h3>
+    <p class="mb-6">Lass uns gemeinsam dein Unternehmen sichtbar machen – online und im Recruiting.</p>
+    <a href="#kontakt" class="btn-brand">Beratung anfragen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontakt" class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">© 2025 Novakovskij Marketingagentur</p>
+      <p class="text-sm">info@novakovskij-marketing.de | +49 123 456 789</p>
+    </div>
+  </footer>
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function disableZoom(disable) {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) return;
+    if (disable) {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+  }
+
+  document.querySelectorAll('[onclick*="mobileMenu"]').forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        disableZoom(isOpen);
+      }, 10);
+    });
+  });
+</script>
+<script>
+function toggleAccordion(id) {
+  // Alle Akkordeon-Elemente schließen
+  document.querySelectorAll('[id^="acc"]').forEach(el => {
+    if (el.id !== id) el.classList.add('hidden');
+  });
+
+  // Aktuelles Akkordeon öffnen/schließen
+  const element = document.getElementById(id);
+  element.classList.toggle('hidden');
+}
+
+</script>
+<script>
+  function toggleFaq(id) {
+    const content = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-faq-${id}`);
+    const isOpen = !content.classList.contains('hidden');
+    
+    // Alle FAQs schließen
+    document.querySelectorAll('[id^="faq-"]').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('[id^="icon-faq-"]').forEach(el => el.classList.remove('rotate-180'));
+
+    // Nur öffnen, wenn vorher geschlossen war
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script>
+
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function disableZoom(disable) {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    if (!metaViewport) return;
+    if (disable) {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    } else {
+      metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    }
+  }
+
+  document.querySelectorAll('[onclick*="mobileMenu"]').forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        disableZoom(isOpen);
+      }, 10);
+    });
+  });
+</script>
+
+</body>
+</html>
+</body>
+</html>
