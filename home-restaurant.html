@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Marketing - Growyy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .btn-brand {
+      background-color: #18CB96;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+      display: inline-block;
+    }
+    .btn-brand:hover {
+      background-color: #16b187;
+    }
+    .announcement {
+      background-color: #16b187;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+    }
+  </style>
+</head>
+<h1>TEST!</h1>
+<body class="bg-white text-gray-800">
+  <div class="announcement">
+    🍽️ Mehr Tische, mehr Buchungen, mehr Stammkunden? Wir machen dein Restaurant sichtbar!
+  </div>
+
+  <header class="bg-gray-900 text-white p-6 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="w-36 h-auto">
+        <a href="index.html">
+          <img src="Fotos/LOGO.svg" alt="Growyy Restaurant" class="w-full h-auto">
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-6 items-center relative">
+        <a href="#leistungen" class="hover:underline">Leistungen</a>
+        <a href="#ablauf" class="hover:underline">Ablauf</a>
+        <a href="#referenzen" class="hover:underline">Erfolge</a>
+        <a href="#kontakt" class="hover:underline">Kontakt</a>
+      </nav>
+      <div class="md:hidden">
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('translate-x-full')" class="focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-gray-50 text-center py-20 px-4">
+    <h1 class="text-4xl font-bold mb-4">Marketing für Restaurants, das schmeckt!</h1>
+    <p class="text-xl mb-8">Mehr Reservierungen, bessere Bewertungen und volle Tische durch digitales Restaurant-Marketing.</p>
+    <a href="#kontakt" class="btn-brand">Jetzt kostenloses Erstgespräch buchen</a>
+  </section>
+
+  <section id="leistungen" class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen speziell für Restaurants</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded shadow text-center">
+          <i class="fas fa-utensils text-[#18CB96] text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Google & TripAdvisor Ads</h3>
+          <p>Gezielte Anzeigen bei hungrigen Gästen in deiner Umgebung.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded shadow text-center">
+          <i class="fab fa-instagram text-[#18CB96] text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Instagram & TikTok</h3>
+          <p>Starkes visuelles Storytelling für mehr Reichweite und Gäste.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded shadow text-center">
+          <i class="fas fa-star text-[#18CB96] text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Bewertungen & Social Proof</h3>
+          <p>Automatisierte Bewertungsstrategie für 5 Sterne und Vertrauen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ablauf" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">So arbeiten wir mit dir zusammen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">1. Kennenlernen</h3>
+          <p>Unverbindliches Gespräch über Ziele und Herausforderungen.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">2. Strategie</h3>
+          <p>Individuelles Konzept speziell für dein Restaurant.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">3. Umsetzung</h3>
+          <p>Wir kümmern uns um alles: Design, Inhalte, Anzeigen.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">4. Optimierung</h3>
+          <p>Laufende Betreuung & Erfolgsmessung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="referenzen" class="bg-white py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Kunden, die mit uns gewachsen sind</h2>
+      <p class="italic max-w-2xl mx-auto mb-6">„Unsere Online-Reservierungen haben sich in nur 4 Wochen verdreifacht. Danke an das Growyy-Team!“</p>
+      <p class="font-semibold">– Familie Rizzo, Trattoria Milano</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="bg-[#18CB96] text-white py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4">Lass dein Restaurant sichtbar werden</h2>
+    <p class="mb-6">Jetzt unverbindlich beraten lassen – dein Erfolg beginnt mit einem Klick.</p>
+    <a href="mailto:info@growyy-marketing.de" class="btn-brand">Beratung anfragen</a>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-10 text-center">
+    <p class="mb-2">© 2025 Growyy Restaurant Marketing</p>
+    <p class="text-sm mb-4">info@growyy-marketing.de | +49 176 7000 3903</p>
+    <div class="space-x-4 text-sm">
+      <a href="#" class="hover:underline">Impressum</a>
+      <a href="#" class="hover:underline">Datenschutz</a>
+    </div>
+  </footer>
+</body>
+</html>
